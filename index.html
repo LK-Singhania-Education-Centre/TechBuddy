@@ -1,154 +1,184 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-    }
-    
-    html {
-      box-sizing: border-box;
-    }
-    
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-  
-    .about-section {
-      padding: 50px;
-      text-align: center;
-      background-color: #474e5d;
-      color: white;
-    }
-    
-    .container {
-      padding: 0 16px;
-    }
-    
-    .container::after, .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    
-    .title {
-      color: grey;
-    }
-    
-    
-    .button:hover {
-      background-color: #555;
-    }
-    
-    @media screen and (max-width: 650px) {
-      .column {
-        width: 100%;
-        display: block;
-      }
-    }</style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    iframe{border-style: solid;border-color: black;}
+    img{border-style: solid;border-color: black;}
+  </style>
+  <link rel="icon" type="image/x-icon" href="https://www.roundsquare.org/wp-content/uploads/2021/10/L-K-Singhania-Education-Centre-300x293.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
+html {
+  box-sizing: border-box;
+}
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
-    <!-- Custom styles for this template -->
-    <link rel="icon" type="image/x-icon" href="https://www.roundsquare.org/wp-content/uploads/2021/10/L-K-Singhania-Education-Centre-300x293.jpg">
-    <title>About</title>
-  </head>
-  <body>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
 
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b>TechBuddy</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href='/'>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/chat">ChatBot</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Coding Resources
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/Flask">Flask</a></li>
-                  <li><a class="dropdown-item" href="/Build">Block Coding</a></li>
-                  <li><a class="dropdown-item" href="/CSS">CSS</a></li>
-                  <li><a class="dropdown-item" href="/HTML">HTML</a></li>
-                  <li><a class="dropdown-item" href="/3D">3D-Design</a></li>
-                </ul>
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<link rel="icon" type="image/x-icon" href="https://www.roundsquare.org/wp-content/uploads/2021/10/L-K-Singhania-Education-Centre-300x293.jpg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>TechBuddy</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href='index.html'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Coding Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Flask.html">Flask</a></li>
+              <li><a class="dropdown-item" href="Build.html">Block Coding</a></li>
+              <li><a class="dropdown-item" href="CSS.html">CSS</a></li>
+              <li><a class="dropdown-item" href="HTML.html">HTML</a></li>
+              <li><a class="dropdown-item" href="3D-Design.html">3D-Design</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    </header>
-
-    <main role="main">
-      <div class="about-section">
-        <h1><b>About Us</b></h1>
-        <h2>Design And Discover Who You Are...</h2>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="shed">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-      <center><h1><b><u>LK Singhania Education Centre</b></u></h1></center>
+    </div>
+</nav>
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ytimg.com/vi/oxATyiFBVaI/maxresdefault.jpg" class="d-block w-100" alt="..." width="700" height="850">
+    </div>
+    <div class="carousel-item">
+      <img src="https://th.bing.com/th/id/R.a1682939d5b11e4d6718ac70faa1e101?rik=vZ%2fcwcfXS7zblA&riu=http%3a%2f%2flogoman.ca%2fwp-content%2fuploads%2f2018%2f01%2fSlider-Banner-Programming-Image-.jpg&ehk=hPHBeI%2fpB6iLjjcGwo4NXMeaqxYrG%2fi8ZST8WVMb5rU%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="..." width="1000" height="850">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.unanigeria.org/wp-content/uploads/2016/03/SDGs_logos_banner.jpg" class="d-block w-100" alt="..." width="1000" height="850">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h2 style="text-align:center"></h2>
+<br>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+
+        
+      <h1 align="center"><b><u>Sustainable Development Goal-4</b></u></h1> 
       <br>
-      <a href="https://lksec.org/"><center><img src="https://lksec.org/images/main-slider/banner-1-1.jpg" height="500" width="1200"></a></center>    
+      <h1 align="center"><b><u>Quality Education</b></u></h1>
       <br>
-      <p ><font face="times new roman" size="6">L K Singhania Education Centre came into existence in July 1987 . This centre Is a realization of the value and dreams of the great visionary Late Lala Kamlapat Singhania and the centre is named after him .
-      L K Singhania Education Centre is a 10 + 2 co-educational, residential, English medium School affiliated to the Central Board of Secondary Education, Delhi Accommodating 1650 students including 950 boarders.
-      This centre is a Multicultural school where traditions, religions and beliefs are respected and Celebrated.</p>
-      </font>
       <br>
-      <hr size="50">
-      <br>
+
       <pre>
-      <a href="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"><img width="550" height="350" src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn"></a>          <a href="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png"><img width="550"height="350"src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-css/sta-je-css.png"></a>               <a href="https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png"><img width="550" height="350" src="https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png"></a>
-      </pre>
-      <font face="times new roman" size="6"><b>Following Coding Languages Are Used To Make This Web App:
-      <ol>
-        <li>Hyper Text Markup Language (HTML)</li>
-        <li>Cascading Style Sheet (CSS)</li>
-        <li>Flask (Python)</li>
-      </ol> </b></font>
-      <br>
-      <hr size="50">
-      <font face="times new roman" size="6"><b>For any help, doubt or recommendation:
-      You can Send Mail To Us <a href="mailto:sandeep.lksec@gmail.com">Here</a>
-      </b></font>
-      <br>
-      <br>
+  <a href="https://apa.sdg4education2030.org/sites/apa.sdg4education2030.org/files/2021-04/Goal%204_0.jpg"><img src="https://apa.sdg4education2030.org/sites/apa.sdg4education2030.org/files/2021-04/Goal%204_0.jpg" height="500" width="600"></a>  <a href="https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/News/In%20Focus/SDGs/infographics-2018/UNW17011_SOCIAL_MEDIA_MESSAGES_EN_5.png?h=350&w=350"><img src="https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/News/In%20Focus/SDGs/infographics-2018/UNW17011_SOCIAL_MEDIA_MESSAGES_EN_5.png?h=350&w=350" height="500" width="600"></a>   <a href="https://mishrapawan.files.wordpress.com/2020/01/4.png?w=667&h=393"><img src="https://mishrapawan.files.wordpress.com/2020/01/4.png?w=667&h=393" height="500" width="600"></a>
+   
 
+    </pre><pre>
+    <A href="//sdgs.un.org/goals/goal4"><button type="button" class="btn btn-primary btn-lg btn-block">                                                                            Learn More                                                                              </button></A></pre>
+    <br>
+    <h1 align="center"><b><u>Videos For SDG-4 : Quality Education</b></u></h1>
+    <br>
+    <br>
+      <center><pre>
+  <iframe src="https://youtube.com/embed/PjjWYHEuoKI" width="550" height="300"></iframe>               <iframe src="https://youtube.com/embed/mCU3n6y-uaU" width="550" height="300"></iframe>            <iframe src="https://youtube.com/embed/tlhp3K1veoQ" width="550" height="300"></iframe>
       
+      
+      </center></pre>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+       
+    </div>
+  </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
 </html>
